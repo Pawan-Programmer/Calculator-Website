@@ -141,9 +141,9 @@ This project is being built step by step as part of my learning journey.
 
 ## 📬 Connect With Me
 
-GitHub: *(Add your GitHub profile link here)*
+GitHub: https://github.com/Pawan-Programmer
 
-LinkedIn: *(Add your LinkedIn profile link here)*
+LinkedIn: https://linkedin.com/in/pawan-kumar-624533381
 
 ---
 
