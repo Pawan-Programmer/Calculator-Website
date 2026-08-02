@@ -1,41 +1,42 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator Website</title>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="calculator">
-        <div class="display" id="display">
-            0
-        </div>
-        <div class="buttons">
-            <button class="btn" data-value="Clear">C</button>
-            <button class="btn" data-value="Backspace">⌫</button>
-            <button class="btn" data-value="/">/</button>
-            <button class="btn" data-value="*">*</button>
+      <div class="display-container">
+        <div class="previous-operand"></div>
+        <div id="display">0</div>
+      </div>
+      <div class="basic-buttons">
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn action" data-value="DEL">DEL</button>
+        <button class="btn action" data-value="Clear">AC</button>
 
-            <button class="btn" data-value="7">7</button>
-            <button class="btn" data-value="8">8</button>
-            <button class="btn" data-value="9">9</button>
-            <button class="btn" data-value="-">-</button>
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn operator" data-value="X">X</button>
+        <button class="btn operator" data-value="/">/</button>
 
-            <button class="btn" data-value="4">4</button>
-            <button class="btn" data-value="5">5</button>
-            <button class="btn" data-value="6">6</button>
-            <button class="btn" data-value="+">+</button>
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn operator" data-value="+">&#x002B;</button>
+        <button class="btn operator" data-value="-">-</button>
 
-            <button class="btn" data-value="1">1</button>
-            <button class="btn" data-value="2">2</button>
-            <button class="btn" data-value="3">3</button>
-            <button class="btn" data-value="=">=</button>
-
-            <button class="btn" data-value="0">0</button>
-            <button class="btn" data-value=".">.</button>
-        </div>
-
+        <button class="btn" data-value="0">0</button>
+        <button class="btn" data-value="."><h2>.</h2></button>
+        <button class="btn" data-value="10x">x10x</button>
+        <button class="btn" data-value="Ans">Ans</button>
+        <button class="btn equal" data-value="=">=</button>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

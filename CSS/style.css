@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, Helvetiica, sans-serif;
+  background-color: #205b7a;
+  color: #f60000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.calculator {
+  width: 400px;
+  background-color: #2a2a40;
+  height:459;
+  padding: 25px;
+  border-radius: 07px;
+  box-shadow: 0 10px 25px #13131b;
+}
+#display {
+  /* Code for Display's Base*/
+  padding: 1px;
+  width: 100%;
+  height: 90px;
+  background-color: #a2d4db;
+  border-radius: 07px;
+}
+#display {
+  /* Code for Display's Contents */
+  display: flex;
+  justify-content: flex-end; /* Here, flex-end means display Output from right side */
+  align-items: center;
+  box-sizing: border-box;
+
+  padding: 10px;
+  margin-bottom: 20px; /*Here, margin-bottom means apply space in between buttons and display's border */
+
+  font-size: 2.4rem;
+  font-weight: bold;
+
+  overflow: hidden; /*Here, We use overflow for keeping calculation inside the display*/
+}
+.basic-buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* repeat(4,1fr) means maintain 4 buttons in every row with having equal width(fr) of buttons */
+  gap: 10px;
+}
+.basic-buttons {
+  height: 130px;
+  border: none;
+  border-radius: x;
+  background-color: #2a2a40;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer; /*Pointer is use for giving hint to user that given buttons are clickable*/
+  transition: all 0.2s ease; /* For making mouse animation smooth only for 0.2 sec, ease is just for natural animation speed*/
+}
+button:hover {
+  background-color: #81cece; /*For giving hover color to buttons*/
+}
+button:active {
+  transform: scale(0.9);
+}
+.operator {
+  background-color: #f27a71;
+}
+.operator:hover {
+  background-color: #ffad33;
+}
+.btn {
+  height: 80px;
+  border: none;
+  border-radius: 07px;
+  background-color: #9c9090;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.action {
+  background-color: #e74c3c;
+}
+.equal {
+    background-color: #11d781;
+    color: white;
+}
