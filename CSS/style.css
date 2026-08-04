@@ -1,3 +1,10 @@
+/* CSS Reset */
+* {
+    margin: 0; /* this is added for keeping by default margin,padding for all browsers */
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body Styling */
 body {
   font-family: Arial, Helvetiica, sans-serif;
   background-color: #205b7a;
@@ -7,6 +14,7 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+/* Calculator Container */
 .calculator {
   width: 400px;
   background-color: #2a2a40;
@@ -15,6 +23,7 @@ body {
   border-radius: 07px;
   box-shadow: 0 10px 25px #13131b;
 }
+/* Display */
 #display {
   /* Code for Display's Base*/
   padding: 1px;
@@ -44,6 +53,7 @@ body {
   /* repeat(4,1fr) means maintain 4 buttons in every row with having equal width(fr) of buttons */
   gap: 10px;
 }
+/* Basic Buttons */
 .basic-buttons {
   height: 130px;
   border: none;
@@ -68,7 +78,7 @@ button:active {
   background-color: #ffad33;
 }
 .btn {
-  height: 80px;
+  height: 67px;
   border: none;
   border-radius: 07px;
   background-color: #9c9090;
@@ -77,10 +87,27 @@ button:active {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+/* Action Buttons */
 .action {
   background-color: #e74c3c;
 }
+/* Equal Button */
 .equal {
     background-color: #11d781;
     color: white;
+}
+/* Responsive Design */
+@media (max-width: 600px) { /* @media is use for responsive Design in other device's Screen like Phones, Tablets */
+    .calculator {
+        width: 95%; /*Using width 95% for avoid overflow of buttons at the edges of Phones,Tablet*/
+        padding: 15px;
+    }
+    .display {
+        font-size: 2rem;
+        padding: 15px;
+    }
+    button {
+        height: 60px;
+        font-size: 1.1rem;
+    }
 }
