@@ -1,7 +1,7 @@
 console.log("JavaScript Connected Successfully!");
 const display = document.getElementById("display");
 
-console.log(display); /*here, consule is used to verify that given selector is selecting right element  */
+console.log(display); /*here, consule is used to verify that given selector is selecting right element in console Area of Webpage */
 
 const buttons = document.querySelectorAll(".btn");/*Select all buttons and make nodelist in which these buttons will be stored */
 console.log(buttons);
