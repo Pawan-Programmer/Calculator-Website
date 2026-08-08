@@ -8,7 +8,7 @@
 body {
   font-family: Arial, Helvetiica, sans-serif;
   background-color: #205b7a;
-  color: #f60000;
+  color: #e90000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,9 +35,10 @@ body {
 #display {
   /* Code for Display's Contents */
   display: flex;
-  justify-content: flex-end; /* Here, flex-end means display Output from right side */
-  align-items: center;
+  justify-content: center; /* Here, flex-end means display Output from right side */
+  align-items: flex-end;
   box-sizing: border-box;
+  flex-direction: column;
 
   padding: 10px;
   margin-bottom: 20px; /*Here, margin-bottom means apply space in between buttons and display's border */
@@ -46,6 +47,19 @@ body {
   font-weight: bold;
 
   overflow: hidden; /*Here, We use overflow for keeping calculation inside the display*/
+}
+#expression {
+    width: 100%;
+    text-align: right;
+    font-size: 18px;
+    min-height: 25px;
+}
+
+#result {
+    width: 100%;
+    text-align: right;
+    font-size: 32px;
+    min-height: 45px;
 }
 .basic-buttons {
   display: grid;
