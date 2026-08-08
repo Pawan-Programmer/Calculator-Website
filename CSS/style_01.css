@@ -90,7 +90,7 @@ body{
 }
 
 .action{
-    color: #d13d7c;
+    color: #f10202;
 }
 
 .operator{
@@ -102,4 +102,19 @@ body{
     grid-column: span 2;
     width: 145px;
     color: #52d81c;
+}
+/* Responsive Design */
+@media (max-width: 600px) { /* @media is use for responsive Design in other device's Screen like Phones, Tablets */
+    .calculator {
+        width: 95%; /*Using width 95% for avoid overflow of buttons at the edges of Phones,Tablet*/
+        padding: 15px;
+    }
+    .display {
+        font-size: 2rem;
+        padding: 15px;
+    }
+    button {
+        height: 60px;
+        font-size: 1.1rem;
+    }
 }

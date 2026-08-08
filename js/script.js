@@ -32,6 +32,19 @@ buttons.forEach(function (button) {
         // Operator Block
         else if (button.classList.contains("operator")) {
 
+            // Percentage
+            if (button.textContent === "%") {
+                let number = Number(resultDisplay.textContent);
+                let percentage = number / 100;
+
+                expression.textContent = number + " %";
+                resultDisplay.textContent = percentage;
+
+                justCalculated = true;
+
+                return;
+            }
+
             if (waitingForSecondNumber) {
                 operator = button.textContent;
                 expression.textContent =
@@ -140,7 +153,7 @@ document.addEventListener("keydown", function (event) {
         return;
     }
 
-    // Escape = AC
+    // Escape =
     if (key === "Escape") {
 
         buttons.forEach(function (button) {
