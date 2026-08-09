@@ -10,6 +10,7 @@ let waitingForSecondNumber = false;
 buttons.forEach(function (button) {
     button.addEventListener("click", function () {
 
+        // AC Block
         if (button.textContent === "AC") {
 
             expression.textContent = "0";
@@ -47,15 +48,14 @@ buttons.forEach(function (button) {
 
             if (waitingForSecondNumber) {
                 operator = button.textContent;
-                expression.textContent =
-                    firstNumber + " " + operator;
+                expression.textContent = firstNumber + " " + operator;
                 return;
             }
             firstNumber = Number(resultDisplay.textContent);
             operator = button.textContent;
 
-            expression.textContent =
-                firstNumber + " " + operator;
+            expression.textContent = firstNumber + " " + operator;
+
 
             waitingForSecondNumber = true;
             justCalculated = false;
@@ -111,18 +111,20 @@ buttons.forEach(function (button) {
             if (
                 resultDisplay.textContent === "0" ||
                 resultDisplay.textContent === "Error" ||
-                justCalculated ||
-                waitingForSecondNumber
+                justCalculated || waitingForSecondNumber
             ) {
                 resultDisplay.textContent = button.textContent;
                 justCalculated = false;
                 waitingForSecondNumber = false;
-            } else {
+
+            } else{
+
                 resultDisplay.textContent += button.textContent;
             }
         }
 
     });
+
 });
 
 // Keyboard Function
@@ -135,6 +137,18 @@ document.addEventListener("keydown", function (event) {
 
         buttons.forEach(function (button) {
             if (button.textContent === "=") {
+                button.click();
+            }
+        });
+
+        return;
+    }
+
+    if (key === "%") {
+        event.preventDefault();
+
+        buttons.forEach(function (button) {
+            if (button.textContent === "%") {
                 button.click();
             }
         });
@@ -178,7 +192,7 @@ document.addEventListener("keydown", function (event) {
     }
 
     // Keyboard operators and decimal
-    if (key === "+" || key === "-" || key === "/" || key === ".") {
+    if (key === "+" || key === "-" || key === "/" || key === "." || key === "%") {
 
         buttons.forEach(function (button) {
 

@@ -40,6 +40,8 @@ body{
 
     padding: 50px 15px ;
     box-sizing: border-box;
+
+    overflow: hidden;
 }
 
 #expression {
@@ -47,6 +49,11 @@ body{
     text-align: right;
     font-size: 19px;
     min-height: 40px;
+
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
 }
 
 #result{
@@ -100,7 +107,7 @@ body{
 .equal{
     font-size: x-large;
     grid-column: span 2;
-    width: 145px;
+    width: 150px;
     color: #52d81c;
 }
 /* Responsive Design */
