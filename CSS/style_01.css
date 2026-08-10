@@ -66,7 +66,7 @@ body{
 }
 
 .btn{
-    width: 63px;
+    width: 100%;
     height: 75px;
     background: #e0e5ec;
     border: none;
@@ -111,17 +111,28 @@ body{
     color: #52d81c;
 }
 /* Responsive Design */
-@media (max-width: 600px) { /* @media is use for responsive Design in other device's Screen like Phones, Tablets */
+@media (max-width: 600px) {
+
     .calculator {
-        width: 95%; /*Using width 95% for avoid overflow of buttons at the edges of Phones,Tablet*/
-        padding: 15px;
+        width: 95%;
+        max-width: 350px;
+        padding: 20px;
+        box-sizing: border-box;
     }
+
+    .buttons {
+        gap: 15px;
+    }
+
+    button {
+        width: 100%;
+        height: 60px;
+        font-size: 1.1rem;
+    }
+
     .display {
         font-size: 2rem;
         padding: 15px;
     }
-    button {
-        height: 60px;
-        font-size: 1.1rem;
-    }
+
 }
