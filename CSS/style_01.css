@@ -107,7 +107,7 @@ body{
 .equal{
     font-size: x-large;
     grid-column: span 2;
-    width: 150px;
+    width: 100%;
     color: #52d81c;
 }
 /* Responsive Design */
@@ -120,8 +120,9 @@ body{
         box-sizing: border-box;
     }
 
-    .buttons {
-        gap: 15px;
+    .basic-buttons {
+    gap: 15px;
+    padding: 20px 0 0;
     }
 
     button {
