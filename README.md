@@ -83,7 +83,7 @@ Calculator-Website/
 │
 ├── index.html
 │
-├── css/
+├── CSS/
 │   └── style.css
 │
 ├── js/
@@ -146,5 +146,9 @@ GitHub: https://github.com/Pawan-Programmer
 LinkedIn: https://linkedin.com/in/pawan-kumar-624533381
 
 ---
+
+## 🟢 Live Demo 
+
+[Open Calculator](https://pawan-programmer.github.io/Calculator-Website/)
 
 ### ⭐ If you like this project, don't forget to star the repository!
